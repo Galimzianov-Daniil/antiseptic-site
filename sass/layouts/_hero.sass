@@ -1,0 +1,98 @@
+.hero
+    position: relative
+    padding-top: 34px
+    padding-bottom: 188px
+    background: $blue-color-1
+    overflow: hidden
+    
+    &__header
+        z-index: 1
+        position: relative
+        margin-bottom: 162px
+
+    &__text
+        z-index: 1
+        position: relative
+
+
+.hero-picture-blue
+    max-width: 100%
+    z-index: 0
+    position: absolute
+    left: 0
+    top: 0
+
+
+.hero-picture-green
+    max-width: 100%
+    z-index: 0
+    position: absolute
+    right: 0
+    bottom: 0
+
+
+.hero-picture-antiseptic
+    max-width: 100%
+    z-index: 0
+    position: absolute
+    right: 277px
+    bottom: 0
+
+
+.hero-picture-viruses
+    position: absolute
+    left: 0
+    bottom: 19px
+
+@media (max-width: 1919px) 
+    .hero-picture-green
+        right: 0
+        height: 70%
+
+
+@media (max-width: 1737px) 
+    .hero-picture-viruses
+        width: 200px
+
+    .hero-picture-antiseptic
+        right: 219px
+        height: 600px
+        
+@media (max-width: 1200px) 
+    .hero-picture-green
+        height: 50%
+
+    .hero-picture-antiseptic
+        right: 0px
+        height: 500px
+
+@media (max-width: 992px) 
+    .hero-picture-green
+        height: 40%
+
+    .hero-picture-antiseptic
+        right: -20px
+        height: 400px
+
+@media (max-width: 576px) 
+    .hero
+        text-align: center
+        padding-bottom: 200px
+
+        &__header
+            margin-bottom: 100px
+
+        &__logo
+            width: 120px
+
+    .hero-picture-viruses
+
+        display: none
+
+    .hero-picture-antiseptic
+        right: 50%
+        transform: translateX(50%)
+
+    .hero-picture-green
+        width: 70%
+        height: auto

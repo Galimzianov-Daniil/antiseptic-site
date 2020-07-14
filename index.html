@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(61723756, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61723756" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Антисептики в Перми</title>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <section class="header hero__header">
+
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+
+                    <img src="./img/logo.svg" alt="Логотип компании Новая Линия" class="hero__logo">
+
+                    <address class="address header-nav__mobile">
+                        <a href="tel:89292329922" class="address__item">8 929 232-99-22</a>
+                    </address>
+
+                    <nav class="header-nav">
+                        <menu class="header-menu">
+                            <li class="header-menu__item"><a class="anchor" href=".antiseptics">Антисептики</a></li>
+                            <li class="header-menu__item"><a class="anchor" href=".variants">Доставка</a></li>
+                        </menu>
+                        <!-- /.header-menu -->
+
+                        <address class="address header-nav__address">
+                            <a href="tel:89292329922" class="address__item">8 929 232-99-22</a>
+                        </address>
+                    </nav>
+                    <!-- /.header-nav -->
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /.header -->
+
+        <section class="hero-text hero__text">
+
+            <div class="container">
+
+                <div class="row flex-direction-column">
+
+                <?php
+                            $attr = $_GET["type"];
+                            $titles = [
+                                "for_hands" => 
+                                    [
+                                        "Антисептик-спрей для рук",
+                                        "300 рублей за 100мл антисептика"
+                                    ],
+                                "for_surfaces" => 
+                                    [
+                                        "Антисептик для обработки поверхностей",
+                                        "Антисептик Флексольген 10 литров"
+                                    ],
+                            ];
+
+                            if ($attr) {
+                                    echo 
+                                    '<h1 class="hero-text__title">                        
+                                        ' . $titles[$attr][0] . '
+                            
+                                    </h1>
+                                    <p class="hero-text__description">
+                                        ' . $titles[$attr][1] . '
+                                    </p>';
+                            } else {
+                                echo 
+                                '<h1 class="hero-text__title">                        
+                                    Антисептики для рук и поверхностей в наличии
+                                </h1>
+                                <p class="hero-text__description">
+                                    Антисептики для индивидуального ухода <br> и для обработки поверхностей
+                                </p>';
+                            }
+                        ?>                   
+
+                    <div class="hero-text__buttons">
+
+                        <button class="button button_large hero-text__button button_buy">
+                            Купить
+                        </button>
+
+                        <button class="button button-o button_large hero-text__button button_more">
+                            Подробнее
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /.hero-text -->
+
+        <img src="./img/hero-picture-green.svg" class="hero-picture-green" alt="Декоративное изображение">
+        <img src="./img/hero-picture-blue.svg" class="hero-picture-blue" alt="Декоративное изображение">
+        <img src="./img/hero-picture-viruses.svg" class="hero-picture-viruses" alt="Декоративное изображение">
+        <img src="./img/antiseptic.png" alt="Фото флакона с антисептиком" class="hero-picture-antiseptic">
+
+    </section>
+    <!-- /.hero -->
+
+    <section id="antiseptics" class="section antiseptics">
+
+        <div class="container">
+
+            <div class="row">
+                <h2 class="section-title section__title">Антисептики</h2>
+                <!-- /.section-title -->
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 offset-lg-1 antiseptics__card">
+
+                    <div class="good-card flex-direction-column">
+
+                        <h3 class="good-card__title">Индивидуальный уход</h3>
+
+                        <div class="good-card__img">
+                            <img src="./img/flacon-mini.png" alt="Флакон с антисептиком">
+                        </div>
+
+                        <ul class="good-card__decription flex-direction-column">
+                            <li class="good-card__decription-option">Фасовка: флакон 100мл</li>
+                            <li class="good-card__decription-option good-card__decription-option_large">Подходит для
+                                ношения в кармане</li>
+                        </ul>
+
+                        <div class="good-card__price">
+                            300 ₽
+                        </div>
+
+                        <div class="good-card__buttons">
+                            <button class="minor-button good-card__button">Купить</button>
+                            <button class="more-button good-card__button good-card__more-button">Подробнее</button>
+                        </div>
+
+                        <div class="good-card__more">
+                            <p>Состав: нанокомпонент – концентрат коллоидного серебра "КНД-С-К" в виде 0,1% раствора,
+                                использующегося в качестве консерванта; этанол (изопропанол) с объемной долей спирта не
+                                более 75%, глицерин, экстракт календулы, эфирные масла. <br><br>
+
+                                Фасовка: 1 флакон - 100мл <br><br>
+
+                                Цена за флакон: 300 рублей <br><br>
+
+                                Марка: Nature Shine</p>
+
+                            <div class="good-card__buttons">
+                                <button class="minor-button good-card__button">Купить</button>
+                                <button class="more-button good-card__button good-card__close">Закрыть</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /.good-card -->
+
+                </div>
+
+                <div class="col-lg-5 antiseptics__card">
+
+                    <div class="good-card flex-direction-column">
+
+                        <h3 class="good-card__title">Для обработки поверхностей</h3>
+
+                        <div class="good-card__img">
+                            <img src="./img/canistra.png" alt="Флакон с антисептиком">
+                        </div>
+
+                        <ul class="good-card__decription flex-direction-column">
+                            <li class="good-card__decription-option">Фасовка: канистра 10л</li>
+                            <li class="good-card__decription-option good-card__decription-option_large">Подходит для
+                                дезинфекции
+                                и мытья поверхностей</li>
+                        </ul>
+
+                        <div class="good-card__price">
+                            4000 ₽
+                        </div>
+
+                        <div class="good-card__buttons">
+                            <button class="minor-button good-card__button">Купить</button>
+                            <button class="more-button good-card__button good-card__more-button">Подробнее</button>
+                        </div>
+
+                        <div class="good-card__more">
+                            <p>Универсальное средство с мощным антимикробным действием. Подходит для дезинфекции и мытья
+                                поверхностей в помещениях, жесткой мебели, игрушек, санитарно-технического оборудования,
+                                трубопроводов, инвентаря. Объем 10 л.
+                                <br><br>
+                                Марка: Флексольвент
+                                <br><br>
+                                Фасовка: 10л
+                            </p>
+
+                            <div class="good-card__buttons">
+                                <button class="minor-button good-card__button">Купить</button>
+                                <button class="more-button good-card__button good-card__close">Закрыть</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /.good-card -->
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+
+        <img src="./img/antiseptics-picture.svg" class="antiseptics-picture" alt="Декоративное изображение">
+
+
+
+    </section>
+    <!-- /.antiseptics -->
+
+    <section class="join">
+
+        <section id="delivery" class="section section_dark variants">
+
+            <div class="container">
+
+                <div class="row">
+                    <h2 class="section-title section-title_light section__title">Варианты покупки</h2>
+                    <!-- /.section-title -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-6 col-10">
+
+                        <div class="items-layout-first">
+
+                            <div class="items-layout-first__icon">
+                                <img src="./img/deliver.png" alt="Самовывоз">
+                            </div>
+                            <!-- /.items-layout-first__icon -->
+
+                            <div class="items-layout-first__text">
+
+                                <h3 class="items-layout-first__title">
+                                    Самовывоз
+                                </h3>
+                                <!-- /.items-layout-first__title -->
+
+                                <p class="items-layout-first__description">
+                                    Вы забираете товар у нас в магазине.
+                                    Оплата при получении товара.
+                                </p>
+                                <!-- /.items-layout-first__description -->
+
+                            </div>
+                            <!-- /.items-layout-first__text -->
+
+                        </div>
+                        <!-- /.items-layout-first -->
+
+                    </div>
+                    <!-- /.col-6 -->
+
+                    <div class="col-lg-6 col-10">
+
+                        <div class="items-layout-first">
+
+                            <div class="items-layout-first__icon">
+                                <img src="./img/delivery-truck.png" alt="Доставка">
+                            </div>
+                            <!-- /.items-layout-first__icon -->
+
+                            <div class="items-layout-first__text">
+
+                                <h3 class="items-layout-first__title">
+                                    Доставка
+                                </h3>
+                                <!-- /.items-layout-first__title -->
+
+                                <p class="items-layout-first__description">
+                                    Доставка по городу - 100 ₽.
+                                    Оплата при встрече с курьером
+                                </p>
+                                <!-- /.items-layout-first__description -->
+
+                            </div>
+                            <!-- /.items-layout-first__text -->
+
+                        </div>
+                        <!-- /.items-layout-first -->
+
+                    </div>
+                    <!-- /.col-6 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+            <img src="./img/viruses.png" alt="Короновирус" class="variants-viruses">
+
+        </section>
+        <!-- /.variants -->
+
+
+        <section class="offer">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8 col-12">
+                        <h2 class="section-title">Оставить заявку</h2>
+                        <p class="offer__description">Мы обсудим тип антисептика, доставку и количество</p>
+                    </div>
+                    <!-- /.col-8 -->
+
+                    <div class="col-lg-4 col-12">
+
+                        <form method="POST" action="/mailer/smart.php" class="offer-form">
+                            <input name="user_phone" type="text" class="offer-form__input offer-form__item"
+                                placeholder="Ваш номер" required>
+                            <input name="user_name" type="text" class="offer-form__input offer-form__item"
+                                placeholder="Ваше имя" required>
+                            <button class="offer-form__button offer-form__item">Отправить</button>
+                            <p class="offer-form__description">
+                                Оставляя заявку, вы соглашаетесь
+                                с <a href="#">политикой конфиденциальности</a>
+                            </p>
+                        </form>
+                        <!-- /.offer-form -->
+
+                    </div>
+                    <!-- /.col-4 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+
+        </section>
+        <!-- /.offer -->
+
+        <img src="./img/join-blue.png" class="join-blue" alt="Декоративное изображение">
+
+        <img src="./img/join-light-green.png" class="join-light-green" alt="Декоративное изображение">
+
+
+    </section>
+    <!-- /.join -->
+
+    <section class="contacts">
+
+        <div class="container">
+
+            <div class="row align-items-center" >
+
+                <div class="col-lg-6">
+                    <h2 class="section-title contacts__title">Контакты</h2>
+                    <!-- /.contacts__title -->
+                    <address class="address address_dark">
+                        <span class="address__item">
+                            Адрес: Деревообделочная 6
+                        </span>
+                        <span class="address__item">
+                            Номер телефона: <a href="tel:89292329922">8 929 232-99-22</a>
+                        </span>
+                    </address>
+                    <!-- /.address -->
+
+                    <!-- <button class="minor-button contacts__button">Оставить заявку</button> -->
+                    <!-- /.minor-button -->
+                </div>
+
+                <div class="contacts__map">
+                        <script  async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afad1e6caa7bc63a93464122fefb069f779e66ca6cd2cca21003773fd9eaa791c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+
+
+    </section>
+    <!-- /.contacts -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between">
+                <img class="footer__item" src="./img/logo.svg" alt="Логотип компании Новая Линия">
+                <span class="footer__item">Сайт разработал: <a href="https://vk.com/danya_galimzyanov">Галимзянов Даниил</a></span>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- /.footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $(".minor-button, .button_buy").on("click", function (e) {
+                $('html, body').animate({ scrollTop: $(".offer").offset().top }, 777);
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        $(document).ready(function () {
+            $(".button_more").on("click", function (e) {
+                $('html, body').animate({ scrollTop: $(".antiseptics").offset().top }, 777);
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        $(".anchor").on("click", function (e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+        });
+
+        var goodCards = document.querySelectorAll(".good-card");
+
+        var _loop = function _loop(i) {
+            var goodCard = goodCards[i],
+                moreCard = goodCard.querySelector(".good-card__more"),
+                close = goodCard.querySelector(".good-card__close");
+            button = goodCard.querySelector(".good-card__more-button");
+            console.log(moreCard);
+            button.addEventListener("click", function () {
+                moreCard.style.top = 0;
+            });
+            close.addEventListener("click", function () {
+                moreCard.style.top = "100%";
+            });
+        };
+
+        for (var i = 0; i < goodCards.length; i++) {
+            _loop(i);
+        }
+
+    </script>
+
+</body>
+
+</html>
